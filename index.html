@@ -5,6 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selen Hocanız</title>
   <style>
+/* --- Selen Hocanız sitesi tasarım kodları --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f4d9e7, #d7f2e3);
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #047c67;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Profil fotoğrafı */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #047c67;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Görsel galeri */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.gallery img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -25,6 +86,7 @@
     }
 
     header {
+      <img src="6f100b58-205e-4ef7-8088-5ddd35b0c8af.jpg" alt="Selen Hocanız" class="profile-photo">
       animation: fadeIn 2s ease forwards;
     }
 
