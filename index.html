@@ -192,7 +192,21 @@
     }
     @media(max-width:520px){
       .gallery img { width:100%; height:160px; }
-      .profile-photo{ width:150px; height:150px; }
+      .profile-photo{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:14px; /* kare kenar, hafif yuvarlatılmış */
+  border:4px solid rgba(4,124,103,0.25);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background:#eee;
+}
+.profile-photo:hover{
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
     }
 
     /* Görsel hafif fade-in */
