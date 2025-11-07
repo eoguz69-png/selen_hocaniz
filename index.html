@@ -3,121 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EO YAZILIM</title>
+  <title>Selen Hocanız</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: radial-gradient(circle at center, #111 0%, #000 100%);
-      color: #d1d1d1;
-      height: 100vh;
+      background: linear-gradient(135deg, #f8d7e3, #c9f7e3);
+      color: #333;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      overflow: hidden;
       text-align: center;
+      min-height: 100vh;
+      padding: 60px 20px;
+      overflow-x: hidden;
     }
 
-    img {
-      width: 220px;
-      max-width: 80%;
-      border-radius: 10px;
-      animation: fadeInScale 1.5s ease forwards;
-      opacity: 0;
-      transform: scale(0.8);
+    header {
+      animation: fadeIn 2s ease forwards;
     }
 
-    h1 {
-      margin-top: 25px;
+    header h1 {
       font-size: 2.4rem;
-      letter-spacing: 3px;
-      color: #c0c0c0;
-      text-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
-      animation: fadeIn 2s ease forwards 0.6s;
-      opacity: 0;
+      color: #047c67;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
     }
 
-    p {
-      font-size: 1.1rem;
-      color: #a9a9a9;
-      margin: 15px 0 40px;
-      animation: fadeIn 2s ease forwards 1s;
-      opacity: 0;
+    header h2 {
+      color: #c2185b;
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
 
-    .buttons {
+    .about {
+      max-width: 700px;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      animation: slideUp 1.5s ease forwards;
+    }
+
+    .about p {
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .contact {
+      margin-top: 40px;
       display: flex;
       gap: 20px;
-      animation: fadeIn 2s ease forwards 1.5s;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeIn 2s ease forwards 0.8s;
       opacity: 0;
     }
 
     a {
       text-decoration: none;
-      color: #c0c0c0;
-      border: 1px solid #c0c0c0;
-      padding: 10px 22px;
-      border-radius: 30px;
+      color: white;
+      background: #047c67;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: 500;
       transition: all 0.3s ease;
     }
 
     a:hover {
-      background: #c0c0c0;
-      color: #111;
-      box-shadow: 0 0 15px #c0c0c0;
+      background: #c2185b;
+      transform: scale(1.05);
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8rem;
-      color: #555;
-      letter-spacing: 1px;
-      animation: fadeIn 2s ease forwards 2s;
+      margin-top: 50px;
+      color: #666;
+      font-size: 0.9rem;
+      animation: fadeIn 2s ease forwards 1.2s;
       opacity: 0;
     }
 
-    @keyframes fadeInScale {
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
     @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      to { opacity: 1; }
     }
 
-    /* Parlama efekti */
-    @keyframes glow {
-      0% { text-shadow: 0 0 10px #888; }
-      50% { text-shadow: 0 0 20px #c0c0c0; }
-      100% { text-shadow: 0 0 10px #888; }
-    }
-
-    h1:hover {
-      animation: glow 2s infinite;
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="EO YAZILIM logosu" />
-  <h1>EO YAZILIM</h1>
-  <p>Modern çözümler, profesyonel yazılım projeleri.</p>
+  <header>
+    <h1>Selen Hocanız</h1>
+    <h2>Coğrafya Öğretmeni</h2>
+  </header>
 
-  <div class="buttons">
-    <a href="https://instagram.com/kullaniciadiniz" target="_blank">Instagram</a>
-    <a href="tel:+905XXXXXXXXX">Telefon</a>
+  <div class="about">
+    <p>Merhaba! Ben Selen, lise düzeyinde coğrafya öğretmeniyim.  
+    Öğrencilerime sadece bilgiyi değil; merakı, keşfetmeyi ve doğayı anlamayı da öğretmeyi hedefliyorum.  
+    Bu sayfa üzerinden ders notlarımı, görsel kaynakları ve faydalı içerikleri paylaşacağım.  
+    Öğrenmekten keyif alan herkese kapım açık 🌍💚</p>
   </div>
 
-  <footer>© 2025 EO YAZILIM</footer>
+  <div class="contact">
+    <a href="mailto:ornekmail@ornek.com">E-posta Gönder</a>
+    <a href="https://instagram.com/ornekhesap" target="_blank">Instagram</a>
+  </div>
+
+  <footer>© 2025 Selen Hocanız | Coğrafya ile hayatı keşfedin 🌿</footer>
 </body>
 </html>
